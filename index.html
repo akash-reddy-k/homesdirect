@@ -20,9 +20,15 @@ li { margin:4px 0; }
 .points li { background:#fff; border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:0; }
 a { color:var(--brand); }
 footer { border-top:1px solid var(--line); margin-top:36px; padding-top:16px; color:var(--muted); font-size:14px; }
+nav.site { border-bottom:1px solid var(--line); background:#fff; }
+nav.site .in { max-width:680px; margin:0 auto; padding:12px 16px; display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; }
+nav.site a { text-decoration:none; color:var(--muted); font-size:15px; }
+nav.site a.home { color:var(--ink); font-weight:700; margin-right:auto; }
+nav.site a[aria-current] { color:var(--brand); font-weight:600; }
 </style>
 </head>
 <body>
+<nav class="site"><div class="in"><a href="index.html" class="home" aria-current="page">HomesDirect</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></div></nav>
 <main>
   <h1>HomesDirect</h1>
   <p class="tag">Rent directly from owners. Free for everyone.</p>
@@ -40,7 +46,8 @@ footer { border-top:1px solid var(--line); margin-top:36px; padding-top:16px; co
   <p>HomesDirect is in early development. The Android app isn't public yet.</p>
 
   <footer>
-    <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> · Contact: <a href="mailto:homesdirectplatform@gmail.com">homesdirectplatform@gmail.com</a>
+    <a href="index.html" aria-current="page">HomesDirect</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a><br>
+    Contact: <a href="mailto:homesdirectplatform@gmail.com">homesdirectplatform@gmail.com</a>
   </footer>
 </main>
 </body>
